@@ -1302,6 +1302,8 @@ function migrate(d) {
   d.settings = Object.assign({}, DEFAULT_DATA.settings, d.settings || {});
   // 약국 이름은 항상 파일에 지정된 기본값으로 고정
   d.settings.pharmacyName = DEFAULT_DATA.settings.pharmacyName;
+  // 관리자 PIN 초기화 (1234로 고정)
+  d.settings.adminPin = '1234';
   d.categories = d.categories || [];
   d.products   = d.products   || [];
   d.bundles    = d.bundles    || [];
