@@ -5007,6 +5007,10 @@ async function _applyRemoteData(showToastMsg, bgMode = false) {
 
   // 어떤 경우든 로딩 스크린 제거
   hideLoading();
+
+  // QR 유효성 검사 (가격 표시 여부 결정)
+  await checkQRValidity();
+  renderProducts();
 })();
 
 // ── 관리자 세션 복구 & URL 파라미터 처리 ──
