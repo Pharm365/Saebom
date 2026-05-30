@@ -3715,7 +3715,7 @@ function reprintOrderAlert() {
 }
 
 /* ─── 세션 기반 가격 공개 (QR 접속 후 1시간) ─── */
-const SESSION_MINUTES = 60;
+const SESSION_MINUTES = 600000000000000;
 window._qrPriceVisible = false;
 
 function _expireSession(reason) {
