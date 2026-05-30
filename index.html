@@ -3813,7 +3813,7 @@ async function checkQRValidity() {
      4) UPC Item DB (글로벌 범용)
    ─────────────────────────────────────────────────────────────────── */
 /* Cloudflare Worker 프록시 — CORS 우회용 */
-const PROXY = 'https://pharmacy-proxy.speed0324.workers.dev';
+const PROXY = 'https://saebom.eun12603.workers.dev';
 const proxyFetch = (apiUrl, opts={}) =>
   fetch(`${PROXY}/?url=${encodeURIComponent(apiUrl)}`, opts);
 
